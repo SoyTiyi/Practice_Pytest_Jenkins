@@ -5,7 +5,7 @@ peline {
 		stage("test PythonEnv") {
 			steps{
 				sh 'pip install pytest'
-				sh 'python -m pytest *.py'
+				sh 'python -m pytest -v *.py'
 			}
 		}
 	}
